@@ -1,0 +1,257 @@
+/* Meyer CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Application CSS */
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  margin-top: 1rem;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+img {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+.block {
+  border: 1px solid transparent; /* prevents jarring movements when we hover over to edit */
+  position: relative;
+}
+
+.block:hover {
+  background-color: #e1f5fe;
+  border: 1px dashed #4fc3f7;
+  cursor: pointer;
+}
+
+.button-close {
+  border: none;
+  color: #666;
+  float: right;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.container {
+  height: 100%;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.template {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);;
+  margin: 2rem;
+}
+
+.template footer {
+  text-align: center;
+}
+
+.template-container {
+  background-color: #eee;
+  padding: 1rem 0;
+}
+
+.template-editor textarea {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-size: 16px;
+  height: 5rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.template-editor textarea + button {
+  background-color: #eaaa30;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+
+.template-editor textarea + button:hover {
+  background-color: #efbd5e;
+}
+
+.template-element {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  display: inline-block;
+  height: 2rem;
+  line-height: 2rem;
+  margin: 0 0.5rem 0.5rem 0;
+  text-align: center;
+  vertical-align: middle;
+  width: 2rem;
+}
+
+.template-menu-editor {
+  border-bottom: 1px solid #ccc;
+  border-right: none;
+  padding: 2rem;
+}
+
+.text-modifiers li {
+  display: inline;
+}
+
+.text-modifiers button {
+  background: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.text-modifiers button:hover {
+  background-color: #efefef;
+}
+
+.text-modifiers #bold {
+  font-weight: 600;
+}
+
+.text-modifiers #italic {
+  font-style: italic;
+}
+
+.ui-controls {
+  display: none;
+  position: absolute;
+  top: -12px;
+  right: 0;
+}
+
+.block:hover .ui-controls {
+  display: inline-block;
+}
+
+.ui-controls button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  font-size: 14px;
+  margin-right: 0.5rem;
+}
+
+.ui-controls li:last-of-type button {
+  margin-right: 0;
+}
+
+.ui-controls button:hover {
+  background-color: #efefef;
+}
+
+.ui-controls li {
+  display: inline;
+}
+
+@media (min-width: 480px) {
+  .template-element {
+    height: 3.5rem;
+    line-height: 3.5rem;
+    margin: 0 1rem 1rem 0;
+    width: 3.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+  }
+
+  .template-container {
+    padding: 0;
+    flex: 2;
+  }
+
+  .template-element {
+    height: 5rem;
+    line-height: 5rem;
+    margin: 0 2rem 2rem 0;
+    width: 5rem;
+  }
+
+  .template-menu-editor {
+    border-bottom: none;
+    border-right: 1px solid #ccc;
+    flex: 1;
+  }
+}

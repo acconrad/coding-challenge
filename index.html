@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Klaviyo">
+    <meta name="HandheldFriendly" content="True">
+
+    <title>Klaviyo Template Prototype</title>
+    <meta name="description" content="Klaviyo take-home email template prototype app.">
+
+    <link rel="stylesheet" href="app.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <aside class="template-menu-editor">
+        <ul class="template-elements" id="template-elements">
+          <li class="card template-element" draggable="true" id="add-text-template">
+            Text
+          </li>
+          <li class="card template-element" draggable="true" id="add-image-template">
+            Image
+          </li>
+          <li class="card template-element" draggable="true" id="add-divider-template">
+            Divider
+          </li>
+        </ul>
+
+        <section class="template-editor" id="template-editor">
+          <button class="button-close" id="close-editor" type="button">&times;</button>
+          <ul class="text-modifiers">
+            <li>
+              <button id="bold" type="button"><strong>B</strong></button>
+            </li>
+            <li>
+              <button id="italic" type="button"><em>I</em></button>
+            </li>
+            <li>
+              <button id="underline" type="button"><u>U</u></button>
+            </li>
+          </ul>
+          <textarea id="active-text"></textarea>
+          <button id="update-template" type="button">Update Template</button>
+        </section>
+      </aside>
+
+      <main class="template-container">
+        <section class="card template" id="email-template"></section>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
