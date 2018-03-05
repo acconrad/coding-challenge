@@ -364,7 +364,7 @@ window.Klaviyo = (function(d, ls){
     /**
      * String builder to construct the UI controls for editing blocks when you hover over them.
      *
-     * @returns {Object<Element>} - The DOM element containing the UI controls
+     * @returns {string} - The DOM element containing the UI controls
      */
   , uiControls: function() {
       return '<ul class="ui-controls">' +
